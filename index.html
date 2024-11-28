@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-white">
-    <header class="pt-14 mx-32 hidden">
+    <header class="pt-14 mx-32 ">
         <nav class="flex justify-between">
             <h2 class="text-4xl font-bold text-black">Easy Ticket</h2>
             <div class="flex gap-10">
@@ -26,7 +26,7 @@
                 <button class="text-xl text-black">Destination</button>
                 <button class="text-xl text-black">Search</button>
             </div>
-            <button class="flex items-center gap-2 bg-[#1DD1001A] p-3 rounded-xl text-xl w-32 h-14 justify-center">Bus
+            <button class="flex items-center gap-2 bg-[#1DD1001A] p-3 rounded-xl text-xl text-[#1DD100] w-32 h-14 justify-center">Bus
                 <img src="images/bus-icon.png" alt=""></button>
         </nav>
         <!-- Banner Section  -->
@@ -39,7 +39,7 @@
             <p class="mt-4 text-lg text-white">Say goodbye to long queues and last-minute hassles. <br>Plan your
                 journey, choose your
                 seats, and book your tickets with just a few clicks!</p>
-            <button class="mt-6 w-40 h-16 rounded-lg bg-[#1DD100] text-black text-lg mb-44">Buy Tickets</button>
+            <a href="#bus-info-section" class="mt-6 w-40 h-16 rounded-lg bg-[#1DD100] text-black text-xl mb-44 flex justify-center items-center font-bold font-[raleway-font]">Buy Tickets</a>
 
             <div class="flex gap-4 absolute bottom-52">
                 <div class="flex bg-white rounded-lg p-3">
@@ -74,7 +74,7 @@
 
     </header>
 
-    <main class="hidden">
+    <main class="">
         <!-- Offer Section -->
         <section class=" mt-32 flex flex-col items-center">
             <h1 class="text-4xl text-black text-center text-[raleway-font]">Best offers for you</h1>
@@ -89,7 +89,7 @@
                     </div>
                     <img src="images/cupon-devider.png" alt="">
                     <div>
-                        <h2 class="text-xl text-black raleway-font font-bold">NEW15</h2>
+                        <h2 id="couponNEW15" class="text-xl text-black raleway-font font-bold">NEW15</h2>
                         <p class="text-[#03071280]">Coupon Code</p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
             <button class="text-[#1DD100] border-2 border-[#1DD100] p-2 w-48 rounded-xl mt-10">See All Offers</button>
         </section>
         <!-- Bus Info Section  -->
-        <section class="rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-[#1dd100] mt-10 bg-[#F7F8F8]">
+        <section id="bus-info-section" class="rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-[#1dd100] mt-10 bg-[#F7F8F8]">
             <h2 class="font-bold text-black text-3xl mt-20 text-center">SAINTMARTIN EXPRESS PVT LTD</h2>
             <p class="text-center mt-4 text-black">
                 Yes, you can run unit tests and view the results directly within the app. The integrated testing
@@ -207,150 +207,149 @@
                                 <!-- Row-1 -->
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
-                                        <p class="text-xl text-gray-950/50 w-4 w-4 w-4">A</p>
+                                        <p class="text-xl text-gray-950/50 w-4">A</p>
+                                        <button class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="A1">A1</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">A1</button>
-                                        <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">A2</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="A2">A2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">A3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="A3">A3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">A4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="A4">A4</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
                                         <p class="text-xl text-gray-950/50 w-4">B</p>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">B1</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="B1">B1</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">B2</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="B2">B2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">B3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="B3">B3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">B4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="B4">B4</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
                                         <p class="text-xl text-gray-950/50 w-4">C</p>
-                                        <button class="w-28 h-14 rounded-xl bg-[#1dd100] py-3 text-white">C1</button>
-                                        <button class="w-28 h-14 rounded-xl bg-[#1dd100] py-3 text-white">C2</button>
+                                        <button class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="C1">C1</button>
+                                        <button class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="C2">C2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">C3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="C3">C3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">C4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="C4">C4</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
                                         <p class="text-xl text-gray-950/50 w-4">D</p>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">D1</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="D1">D1</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">D2</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="D2">D2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">D3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="D3">D3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">D4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="D4">D4</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
                                         <p class="text-xl text-gray-950/50 w-4">E</p>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">E1</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="E1">E1</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">E2</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="E2">E2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">E3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="E3">E3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">E4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="E4">E4</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
                                         <p class="text-xl text-gray-950/50 w-4">F</p>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">F1</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="F1">F1</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">F2</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="F2">F2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">F3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="F3">F3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">F4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="F4">F4</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
                                         <p class="text-xl text-gray-950/50 w-4">G</p>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">G1</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="G1">G1</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">G2</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="G2">G2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">G3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="G3">G3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">G4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="G4">G4</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
                                         <p class="text-xl text-gray-950/50 w-4">H</p>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">H1</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="H1">H1</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">H2</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="H2">H2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">H3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="H3">H3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">H4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="H4">H4</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
                                         <p class="text-xl text-gray-950/50 w-4">I</p>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">I1</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="I1">I1</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">I2</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="I2">I2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">I3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="I3">I3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">I4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="I4">I4</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-16">
                                     <div class="flex gap-8 items-center">
                                         <p class="text-xl text-gray-950/50 w-4">J</p>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">J1</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="J1">J1</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">J2</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="J2">J2</button>
                                     </div>
                                     <div class="flex gap-8">
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">J3</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="J3">J3</button>
                                         <button
-                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60">J4</button>
+                                            class="w-28 h-14 rounded-xl bg-gray-950/10 py-3 text-gray-950/60" data-selected="false" data-seat="J4">J4</button>
                                     </div>
                                 </div>
 
@@ -372,28 +371,30 @@
                         <div class="flex justify-between">
                             <div class="flex gap-1 items-center">
                                 <p class="text-gray-950 text-base font-semibold font-[raleway-font]">Seat</p>
-                                <p
+                                <p id="seat-count"
                                     class="w-6 h-4 bg-[#1dd100] rounded-md text-white text-xs font-bold font-[inter-font] text-center pb-2">
-                                    2</p>
+                                    0</p>
                             </div>
                             <p class="text-gray-950 text-base font-semibold font-[raleway-font]">Class</p>
                             <p class="text-gray-950 text-base font-semibold font-[raleway-font]">Price</p>
                         </div>
                         <hr class="border-t-2 border-dashed border-gray-400 my-6">
-                        <div class="flex justify-between">
-                            <p class="text-gray-950/60 text-base font-normal font-[inter-font]">C1</p>
-                            <p class="text-gray-950/60 text-base font-normal font-[inter-font]">Economoy</p>
-                            <p class="text-gray-950/60 text-base font-normal font-[inter-font]">550</p>
-                        </div>
-                        <div class="flex justify-between">
-                            <p class="text-gray-950/60 text-base font-normal font-[inter-font]">C2</p>
-                            <p class="text-gray-950/60 text-base font-normal font-[inter-font]">Economoy</p>
-                            <p class="text-gray-950/60 text-base font-normal font-[inter-font]">550</p>
+                        <div id="selected_seat" class="">
+                            <!-- <div class="flex justify-between">
+                                <p class="text-gray-950/60 text-base font-normal font-[inter-font]">C1</p>
+                                <p class="text-gray-950/60 text-base font-normal font-[inter-font]">Economoy</p>
+                                <p class="text-gray-950/60 text-base font-normal font-[inter-font]">550</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-950/60 text-base font-normal font-[inter-font]">C2</p>
+                                <p class="text-gray-950/60 text-base font-normal font-[inter-font]">Economoy</p>
+                                <p class="text-gray-950/60 text-base font-normal font-[inter-font]">550</p>
+                            </div> -->
                         </div>
                         <hr class="border-gray-400 mt-6 mb-2">
                         <div class="text-gray-950 text-base font-semibold font-[raleway-font] flex justify-between">
                             <p>Total Price</p>
-                            <p>BDT <span>1100</span></p>
+                            <p>BDT <span id="total_price">0</span></p>
                         </div>
                         <div class="flex justify-center">
                             <label class="input bg-white flex items-center justify-between w-full p-3 my-4 h-14">
@@ -448,7 +449,7 @@
     </main>
 
 
-    <footer class="footer footer-center bg-base-200 text-base-content rounded p-10 hidden">
+    <footer class="footer footer-center bg-base-200 text-base-content rounded p-10 ">
         <nav class="grid grid-flow-col gap-4">
             <a class="link link-hover">About us</a>
             <a class="link link-hover">Contact</a>
@@ -493,7 +494,7 @@
 
     <!-- Success Page -->
 
-    <section class="h-screen w-screen bg-[#f2f1f1] flex justify-center items-center">
+    <section class="h-screen w-screen bg-[#f2f1f1] flex justify-center items-center hidden">
         <div class="w-[718px] h-[481px] bg-white rounded-2xl p-14 flex flex-col items-center gap-2 justify-center">
             <img src="images/success.png" alt="">
             <p class="text-center text-[#27ae60] text-2xl font-bold font-[raleway-font] mt-9 mb-6">SUCCESS</p>
@@ -506,7 +507,7 @@
 
 
 
-
+<script src="Scripts/script.js"></script>
 </body>
 
 </html>
