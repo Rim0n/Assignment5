@@ -11,18 +11,21 @@ function calculateTicketPrice() {
     return totalPrice;
 }
 
-const inputCoupon = document.getElementById('input_coupon');
+
+const grandTotal1 = document.getElementById('grand-total');
+const couponDiv = document.getElementById('coupon-div');
 function applyCoupon() {
+    const inputCoupon = document.getElementById('input_coupon');
+    const couponCode = inputCoupon.value;
     let totalPrice = calculateTicketPrice();
-    
-    const couponCode = inputCoupon.value.trim();
-    const grandTotal1 = document.getElementById('grand-total');
-    // console.log('Entered Coupon:', couponCode);
     const couponCouple20 = document.getElementById('coupon-COUPLE20').innerText;
     const couponNew15 = document.getElementById('coupon-NEW15').innerText;
     const couponDiv = document.getElementById('coupon-div');
     const discountPrice = document.getElementById('discount');
     const discountDiv = document.getElementById('discount-div');
+
+    console.log(inputCoupon);
+
     if (couponCode === couponNew15) {
         const discount = totalPrice * 0.15;
         const grandTotal = totalPrice - discount;
@@ -63,6 +66,8 @@ function ticketSelection() {
 
                 seat.setAttribute('data-selected', 'false');
                 removeFromDiv(seatText);
+                checkCouponValidity();
+
 
 
             } else {
@@ -77,12 +82,15 @@ function ticketSelection() {
                 seat.classList.remove('bg-gray-950/10', 'text-gray-950/60');
                 seat.setAttribute('data-selected', 'true');
                 appendToDiv(seatText);
+                checkCouponValidity();
             }
 
             calculateTicketPrice();
         });
     }
 }
+
+
 
 
 let seatCount = 0;
@@ -122,6 +130,15 @@ function appendToDiv(seatText) {
 
 }
 
+
+
+
+
+
+
+
+
+
 function removeFromDiv(seatText) {
     const toRemove = selectedSeat.querySelector(`div > p[data-seat-text="${seatText}"]`);
     if (toRemove) {
@@ -154,13 +171,13 @@ const inputNumber = document.getElementById('input-number');
 const inputEmail = document.getElementById('input-email');
 const nextButton = document.getElementById('next-button');
 
-console.log(seatCount);
+// console.log(seatCount);
 
 
 function checkAllinfoInserted() {
-    const isNameFilled = inputName.value.trim() !== '';
-    const isNumberFilled = inputNumber.value.trim() !== '';
-    const isEmailFilled = inputEmail.value.trim() !== '';
+    const isNameFilled = inputName.value !== '';
+    const isNumberFilled = inputNumber.value !== '';
+    const isEmailFilled = inputEmail.value !== '';
     let isMinSeatTaken;
 
     if (seatCount > 0) {
@@ -193,5 +210,63 @@ nextButton.addEventListener('click', function () {
 
 });
 
+// function reShowCoupon(){
+//     couponDiv.classList.remove('hidden');
+//     // couponDiv.classList.add('hidden');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// }
+
 const secondPage = document.getElementById('second-page');
+
+function checkCouponValidity() {
+    const discountDiv = document.getElementById('discount-div');
+    const seatCountID1 = document.getElementById('seat-count');
+    if (!seatCountID1) {
+        console.error("Element with ID 'seat-count' not found.");
+        return;
+    }
+    const applyCoupon = document.getElementById('apply-button');
+    const nn = parseInt(seatCountID1.innerText, 10);
+    if (nn === 4) {
+
+        if (!applyCoupon) {
+            console.error("Element with ID 'apply-button' not found.");
+            return;
+        }
+        discountDiv.classList.remove('hidden');
+        applyCoupon.removeAttribute('disabled');
+        applyCoupon.classList.add('bg-[#1dd100]');
+    }
+    else {
+        const inputCoupon = document.getElementById('input_coupon');
+        const discount = document.getElementById('discount');
+        inputCoupon.value = '';
+        couponDiv.classList.remove('hidden');
+        discount.innerText = 0;
+        applyCoupon.setAttribute('disabled', 'true');
+        applyCoupon.classList.add('disabled:bg-slate-400');
+        discountDiv.classList.add('hidden');
+        
+ 
+        
+    }
+
+}
+
+
 
