@@ -18,10 +18,10 @@
 
 <body class="bg-white">
 <!-- Header -->
-    <header id="header" class="pt-14 mx-32 ">
-        <nav class="flex justify-between">
+    <header id="header" class="pt-2 md:pt-14 md:mx-32 mx-0">
+        <nav class=" flex justify-between">
             <h2 class="text-4xl font-bold text-black">Easy Ticket</h2>
-            <div class="flex gap-10">
+            <div class="flex gap-10  hidden sm:hidden ">
                 <button class="text-xl text-black">Home</button>
                 <button class="text-xl text-black">About</button>
                 <button class="text-xl text-black">Destination</button>
@@ -32,8 +32,8 @@
         </nav>
         <!-- Banner Section  -->
         <section
-            class="bg-[url('./images/banner.png')] bg-top bg-no-repeat  mt-6 flex flex-col items-center text-center">
-            <h2 class="text-6xl font-[font-raleway] pt-24 text-white">Travel Made Simple – Book Your <br>
+            class="bg-[url('./images/banner.png')] bg-top bg-no-repeat w-auto  mt-2 md:mt-6 flex flex-col items-center text-center">
+            <h2 class="text-4xl  md:text-6xl font-[font-raleway] pt-24 text-white">Travel Made Simple – Book Your <br>
                 <span class="text-[#1DD100]">Bus Tickets Online!</span>
             </h2>
             <br>
@@ -42,8 +42,8 @@
                 seats, and book your tickets with just a few clicks!</p>
             <a href="#bus-info-section" class="mt-6 w-40 h-16 rounded-lg bg-[#1DD100] text-black text-xl mb-44 flex justify-center items-center font-bold font-[raleway-font]">Buy Tickets</a>
 
-            <div class="flex gap-4 absolute bottom-52">
-                <div class="flex bg-white rounded-lg p-3">
+            <div class="mt-6 flex flex-col md:flex-row gap-4 static md:absolute bottom-52">
+                <div class="flex bg-[#1DD1001A] md:bg-white rounded-lg p-3">
                     <div>
                         <img src="images/people.png" alt="">
                     </div>
@@ -52,7 +52,7 @@
                         <p class="text-black">Registered users</p>
                     </div>
                 </div>
-                <div class="flex bg-white rounded-lg p-3">
+                <div class="flex bg-[#1DD1001A] md:bg-white rounded-lg p-3">
                     <div>
                         <img src="images/ticket-cupon.png" alt="">
                     </div>
@@ -61,7 +61,7 @@
                         <p class="text-black">Tickets sold</p>
                     </div>
                 </div>
-                <div class="flex bg-white rounded-lg p-3 gap-4">
+                <div class="flex bg-[#1DD1001A] md:bg-white rounded-lg p-3 gap-4">
                     <div>
                         <img src="images/stoppage.png" alt="">
                     </div>
@@ -74,15 +74,24 @@
         </section>
 
     </header>
+
+
+
+
+
+
+
+
+
 <!-- Main -->
     <main id="main">
         <!-- Offer Section -->
-        <section class=" mt-32 flex flex-col items-center">
+        <section class=" mt-32  flex flex-col  md:items-center">
             <h1 class="text-4xl text-black text-center text-[raleway-font]">Best offers for you</h1>
-            <div class="flex justify-center gap-6 mt-10">
+            <div class="flex md:flex-row flex-col justify-center gap-6 mt-10">
 
 
-                <div class="bg-[#FFBF0F] flex px-20 rounded-2xl items-center">
+                <div class="bg-[#FFBF0F] flex px-2 md:px-20 rounded-2xl items-center">
                     <div class="">
                         <h2 class="text-3xl font-bold text-black">15% OFF</h2>
                         <p class="text-black">on your next purchase</p>
@@ -96,7 +105,7 @@
                 </div>
 
 
-                <div class="bg-[#F78C9C] flex px-20 rounded-2xl items-center">
+                <div class="bg-[#F78C9C] flex px-2 md:px-20 rounded-2xl items-center">
                     <div class="">
                         <h2 class="text-3xl font-bold text-black">20% OFF</h2>
                         <p class="text-black">on your next purchase</p>
@@ -122,19 +131,19 @@
 
 
 
-            <div class="flex justify-center mt-10 ">
-                <div class=" bg-[#FFFFFF] flex items-center pl-8 rounded-3xl mb-5">
-                    <div>
-                        <div class="flex justify-between">
+            <div class="md:flex justify-center mt-10 ">
+                <div class="bg-[#F7F8F8] md:bg-[#FFFFFF] flex flex-col md:flex-row md:items-center pl-0 md:pl-8 rounded-3xl mb-5">
+                    <div class="flex flex-col items-center md:items-stretch  justify-between">
+                        <div class="flex  justify-between">
                             <div class="flex gap-3">
                                 <img src="images/bus-icon.png" alt="">
                                 <div>
-                                    <h2 class="whitespace-nowrap text-black">SAINTMARTIN EXPRESS PVT LTD</h2>
+                                    <h2 class="whitespace-nowrap md:text-base text-sm text-black">SAINTMARTIN EXPRESS PVT LTD</h2>
                                     <p class=" text-black">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
                             <button
-                                class="flex w-44 h-14 bg-[#1DD10066] items-center justify-center rounded-xl mr-2 text-black"><img
+                                class="flex w-28 md:w-44 h-14 bg-[#1DD10066] items-center justify-center rounded-xl md:mr-2 text-black"><img
                                     src="images/seat-green.png" alt="">40 Seats left</button>
                         </div>
                         <div class="mt-10 bg-[#f7f8f8] p-8 rounded-3xl">
@@ -148,7 +157,7 @@
                                 <p class=" text-black">9:00 PM</p>
                             </div>
                             <hr class="border-t-2 border-dashed border-gray-400 my-6">
-                            <div class="flex gap-3 mt-3">
+                            <div class="flex md:flex-row flex-col gap-3 mt-3">
                                 <p
                                     class="w-56 h-14 bg-[#0307120D] flex justify-center items-center rounded-xl text-black">
                                     Boarding
@@ -177,7 +186,7 @@
         </section>
 
         <!-- Select Your Seat Section -->
-        <section class="bg-[#f7f8f8] pb-32">
+        <section  class="bg-[#f7f8f8] pb-32">
             <div class="bg-white  rounded-3xl p-8 pl-8 ml-36 mr-36 border-2 border-solid flex">
                 <!-- First Half -->
                 <div class="flex">
@@ -451,6 +460,7 @@
 
 
         </section>
+
 
     </main>
 
